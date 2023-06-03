@@ -24,8 +24,8 @@
 
     <!-- Hero -->
     <section id="hero">
-      <img class="hero img" src="./Resources/images/banner.jpg"/>
-      <div class="hero content">
+      <img class="hero-img" src="./Resources/images/banner.jpg"/>
+      <div class="hero-content">
         <h2>Learn something<br>
           new everyday</h2>
         <h3>Lorem ipsum dolor sit amet</h3>
@@ -34,45 +34,52 @@
     </section>
 
     <!-- Information Content -->
-    <div class="flex-container">
-      <section id="info">
-        <img class="info-img" src="./Resources/images/information-main.jpg"/>
-        <h2>It doesn't hurt to keep learning</h2>
-        <p>"curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula." <br><br>
-
-          Emanuel, Sr strategist at Hiring.com</p>
-      </section>
-      <aside class="details">
-        <div class="detail-cards">
-          <img class=item-img src="./Resources/images/information-orientation.jpg" alt="#">
-          <div class="items"> 
+    <section id="info" class="container-sxs">
+      <article class="container-60">
+        <img src="./resources/images/information-main.jpg" alt />
+        <h2>It doesn't hurt to keep practicing</h2>
+        <p>
+          "curabitur vitae libero in ipsum porttitor consequat. 
+          Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. 
+          Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, 
+          tristique ligula."
+        </p>
+        <p>
+          Emanuel, Sr strategist at Hiring.com
+        </p>
+      </article>
+      <aside class="container-40">
+        <div class="h8l-card">
+          <img src="./resources/images/information-orientation.jpg" alt />
+          <div class="h8l-card-text">
             <h3>Orientation date</h3>
-            <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
-            <a>Read more</a>  
+            <p>Tues 10/11 & Wed 10/12: 8am-3pm</p>
+            <a href="#">Read more</a>
           </div>
         </div>
-        <div class="detail-cards">
-          <img class=item-img src="./Resources/images/information-campus.jpg" alt="#">
-          <div class="items"> 
+        <div class="h8l-card">
+          <img src="./resources/images/information-campus.jpg" alt />
+          <div class="h8l-card-text">
             <h3>Our Campus</h3>
-            <p>Find which campus is close to you</p>
-            <a>Read more</a>  
+            <p>Find which campus is close by you</p>
+            <a href="#">Read more</a>
           </div>
         </div>
-        <div class="detail-cards">
-          <img class=item-img src="Resources/images/information-guest-lecture.jpg" alt="#"> 
-          <div class="items"> 
+        <div class="h8l-card">
+          <img src="./resources/images/information-guest-lecture.jpg" alt />
+          <div class="h8l-card-text">
             <h3>Our guest lecture</h3>
             <p>Join a keynote with Oliver Sack about music in medical treatment</p>
-            <a>Read more</a>  
+            <a href="#">Read more</a>
           </div>
         </div>
       </aside>
-    </div>
+    </section>
+      
 
     <!-- Courses -->
-    <section id="courses">
-      <h1>Start Learning</h1>
+    <section id="courses"> 
+      <h1 class="centered-header">Start Learning</h1>
       <div class="course-gallery">
         <div class="card">
           <img src="Resources/images/course-software.jpg" alt="#">
@@ -123,10 +130,50 @@
           </div>
         </div>
       </div>
-    
     </section>
-  
+    
+      <!-- Thesis Content -->
+
+    <section id="thesis">
+      <h2 class="centered-header">This exhibit</h2>
+      <div class="container-sxs">
+        <article class="container-60">
+          <video >
+            <source src="./resources/videos/thesis.mp4" type="video/mp4" />
+          </video>
+          <h2>Reimagine urban</h2>
+          <p>
+            "curabitur vitae libero in ipsum porttitor consequat.
+            Aliquam et commodo lectus, nec consequat neque. Sed non 
+            accumsan urna. Phasellus sed consequat ex. Etiam eget magna
+            laoreet, efficitur dolor consequat, tristique ligula."
+          </p>
+        </article>
+        <aside class="container-40">
+          <div class="h8l-card">
+            <img src="./resources/images/thesis-fisma.jpg" alt />
+            <div class="h8l-card-text">
+              <h3>Fisma: Design and Prototype</h3>
+              <p>Designer showcase of new prototype product</p>
+            </div>
+          </div>
+          <div class="h8l-card">
+            <img src="./resources/images/thesis-now-and-then.jpg" alt />
+            <div class="h8l-card-text">
+              <h3>Now and then</h3>
+              <p>Research study about New York</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>  
   </body>
 
-  <footer></footer>
+  <footer>
+    <p>&copy; 2016 Colmar Academy. All rights reserved</p>
+    <p>
+      <a>Terms</a> &nbsp;
+      <a>Privacy</a>
+    </p> 
+  </footer>
 </html>

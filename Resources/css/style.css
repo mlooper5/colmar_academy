@@ -5,9 +5,9 @@
     font-family: "Poppins", sans-serif;
   }
 
-:root {
+  :root {
     --light: #e8e8e8;
-    --dark: #3b3b3b;
+    --dark: #424242;
 }
 
   h3 {
@@ -68,24 +68,23 @@ nav ul li {
   opacity: .5;
 }
 
-
   #hero {
-    background-color: var(--light);
     display: flex;
     align-items: center;
+    background-color: var(--light);
   }
 
-  #hero .img {
+  .hero-img {
     padding: 32px 24px;
     width: 60%;
   }
 
-  #hero .content {
+  .hero-content {
     padding-left: 24px;
   }
 
   .button {
-    background-color: black;
+    background-color: var(--dark);
     border: none;
     color: white;
     padding: 8px 32px;
@@ -95,50 +94,11 @@ nav ul li {
     font-size: 16px;
   }
 
-  a.button:hover {
-    background-color: gray;
-  }
-
- 
-  .flex-container {
-    display: flex;
-    
-  }
-  
-#info{
-  width: 60%;
-  padding: 32px 24px;
-   
+  a.button:hover{
+    opacity: .90;
 }
 
-  .info-img {
-    width: 100%;
-  }
-
-  .details {
-    padding-top: 16px;
-    width: 40%;
-    border-left: #e7e6e6 2px solid;
-  }
-
-
-  .item-img {
-    width: 35%;
-    height: auto;
-    padding: 16px;
-  }
-
-  .items {
-    display: flex;
-    width: 65%;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .detail-cards {
-    display: flex;
-
-  }
+ /* course section */
 
   #courses{
     padding: 72px;
@@ -162,8 +122,81 @@ nav ul li {
     width: 25%;
     position: relative;
     flex-grow: 1;
+    background-color: white;
   }
   
   .container {
     padding: 2px 16px;
   }
+
+
+  .container-60 {
+    width: 60%;
+    padding: 32px 24px;
+  }
+
+  .container-60 img,video {
+    width: 100%;
+}
+
+.container-40 {
+  display: flex;
+  flex-flow: column;
+  align-items: start;
+  width: 40%;
+  padding-top: 1rem;
+  border-left: var(--light) solid 1px;
+}
+
+#thesis .container-40  {
+  border-left: 0px;
+}
+
+  .container-sxs {
+    display: flex;
+}
+
+.centered-header {
+  text-align: center;
+  padding: 2rem 0 0 0;
+  margin: 0;
+}
+
+  /* h8l card */
+
+  .h8l-card {
+    display: flex;
+    border-bottom: var(--light) solid 1px;
+}
+
+.h8l-card:hover {
+  background-color: var(--light); 
+}
+
+.h8l-card img {
+  width: 35%;
+  padding: 1rem;
+}
+
+.h8l-card-text {
+  width: 65%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  max-width: 250px;
+}
+
+.h8l-card-text h3 {
+  margin: 0;
+}
+
+.h8l-card-text p {
+  margin: .6em 0;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: var(--light) solid 1px;
+  padding: 16px 24px;
+}
